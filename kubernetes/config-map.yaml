@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: "feature toggle"
+  name: featuretoggle
   namespace: bcampos
 data:
   LOCATION_FEATURE_ENABLED: "False"
