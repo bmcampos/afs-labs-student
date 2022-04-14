@@ -20,9 +20,11 @@ spec:
     spec:
       containers:
       - envFrom:
+       - configMapRef:
+            name: feature-toggle
         - secretRef:
             name: db-secret
         name: app-deployment
-        image: harbor.dev.afsmtddso.com/bcampos-harbor-project/app:971c881-ff6c3c2
+        image: harbor.dev.afsmtddso.com/bcampos-harbor-project/app:1e99923-a7e2606
         ports:
         - containerPort: 5000
